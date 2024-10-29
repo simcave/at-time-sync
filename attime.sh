@@ -22,7 +22,7 @@ get_clock_m=$(echo "$time_part" | cut -d':' -f2)
 get_clock_s=$(echo "$time_part" | cut -d':' -f3)
 
 # Set this variable to 1 to enable timezone adjustment, or 0 to disable it
-apply_timezone_adjustment=1
+apply_timezone_adjustment=0
 
 if (( apply_timezone_adjustment )); then
     # Calculate timezone offset in hours
